@@ -1,0 +1,111 @@
+/*Paragraph*/
+/*Heading, background, button*/
+body {
+  background-color: #f2f2f2;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+h2 {
+  font-family: 'Big Shoulders Display';
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f2f2f2;
+}
+
+.cars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 50px auto;
+  padding: 0 15px;
+}
+
+.cars .sedan,
+.cars .suv,
+.cars .luxury {
+  padding: 50px;
+}
+
+.cars .sedan {
+  background-color: #e38826;
+  border-radius: 10px 10px 0 0;
+}
+
+.cars .sedan .more {
+  color: #e38826;
+}
+
+.cars .suv {
+  background-color: #006970;
+}
+
+.cars .suv .more {
+  color: #006970;
+}
+
+.cars .luxury {
+  background-color: #004241;
+  border-radius: 0 0 10px 10px;
+}
+
+.cars .luxury .more {
+  color: #004241;
+}
+
+.cars .more {
+  font-weight: 400;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  width: 10em;
+  height: 3em;
+}
+
+.cars .more:hover {
+  color: inherit;
+  border: 2px solid #f2f2f2;
+}
+
+.attribution {
+  color: #333;
+  text-align: center;
+}
+
+.attribution a {
+  color: #e38826;
+}
+
+@media (min-width: 768px) {
+  .cars {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 991px) {
+  .cars {
+    max-width: 65%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 150px;
+  }
+  .cars .more {
+    margin-top: 100px;
+  }
+  .cars .sedan {
+    border-radius: 10px 0 0 10px;
+  }
+  .cars .luxury {
+    border-radius: 0 10px 10px 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
